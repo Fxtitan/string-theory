@@ -75,15 +75,19 @@ const ciEmailify = (emailName) => {
 }
 
 const onlyVowels = (str) => {
-  let emptyString = ''
-  let vowels = 'aeoiuAEOIU' 
-  for (i = 0; i < str.length; i++) {
-    if (vowels === str[i]) {
-      emptyString += str[i];
-    }
-  } 
-  return emptyString;
-}
+  let emptyString = '';
+  for (let i = 0; i < str.length; i++) {
+    switch(str[i]){
+      case 'a': return 'a' || 'A';
+			case 'e': return 'e' || 'E';
+			case 'i': return 'i' || 'I';
+      case 'o': return 'o' || 'O';
+			case 'u': return 'u' || 'U';
+        default:
+		}
+	}
+    return emptyString += str[i];
+}// :/
 
 const numberedChars = (str) => {
   let num = 1;
