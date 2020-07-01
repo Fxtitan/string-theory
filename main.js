@@ -74,16 +74,16 @@ const ciEmailify = (emailName) => {
   return emptyString.toLowerCase() + '@codeimmersives.com';
 }
 
-// const onlyVowels = (str) => {
-//   let emptyString = ''
-//   let vowels = 'aeoiuAEOIU' 
-//   for (i = 0; i < str.length; i++) {
-//     if (str.indexOf(vowels)) {
-//       emptyString += str[i];
-//     }
-//   } 
-//   return emptyString;
-// }
+const onlyVowels = (str) => {
+  let emptyString = ''
+  let vowels = 'aeoiuAEOIU' 
+  for (i = 0; i < str.length; i++) {
+    if (vowels === str[i]) {
+      emptyString += str[i];
+    }
+  } 
+  return emptyString;
+}
 
 const numberedChars = (str) => {
   let num = 1;
